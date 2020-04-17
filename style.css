@@ -176,7 +176,7 @@ footer .controls #next-icon {
     to {transform: rotate(360deg);}
 }
 
-.move-forward  { animation: 3s rotate-clockwise ease-in-out 1; }
-.move-backward { animation: 3s rotate-anticlockwise ease-in-out 1; }
+.move-forward  { animation: 4s rotate-clockwise ease-in-out 1; }
+.move-backward { animation: 4s rotate-anticlockwise ease-in-out 1; }
 
 
