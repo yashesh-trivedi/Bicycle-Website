@@ -161,8 +161,8 @@ footer .controls #next-icon {
 
 #old-school-cycle .back-wheel {transform-origin: 19% 69.2%;}
 
-.back-wheel, .front-wheel {
-    animation: 5s rotate-wheel ease-in 2;
+.back-wheelanimate, .front-wheelanimate {
+    animation: 5s rotate-wheel ease-in infinite;
 }
 
 #old-school-cycle .front-wheel {
