@@ -154,26 +154,29 @@ footer .controls #next-icon {
     margin-left: 10px;
  }
 
- @keyframes rotate-wheel {
+
+/*--------------------------------------
+            Animation
+----------------------------------------*/
+
+#old-school-cycle .back-wheel {transform-origin: 19% 69.2%;}
+#old-school-cycle .front-wheel {transform-origin: 80.7% 69.2%;}
+
+#girly-fun-cycle .back-wheel {transform-origin: 20.5% 71.8%;}
+#girly-fun-cycle .front-wheel {transform-origin: 82% 72%;}
+
+
+@keyframes rotate-anticlockwise {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(-360deg);}
+}
+
+@keyframes rotate-clockwise {
     from {transform: rotate(0deg);}
     to {transform: rotate(360deg);}
 }
 
-#old-school-cycle .back-wheel {transform-origin: 19% 69.2%;}
+.move-forward  { animation: 3s rotate-clockwise ease-in-out 1; }
+.move-backward { animation: 3s rotate-anticlockwise ease-in-out 1; }
 
-.back-wheelanimate, .front-wheelanimate {
-    animation: 5s rotate-wheel ease-in infinite;
-}
-
-#old-school-cycle .front-wheel {
-    transform-origin: 80.7% 69.2%;
-}
-
-#girly-fun-cycle .back-wheel {
-    transform-origin: 20.5% 71.8%;
-}
-
-#girly-fun-cycle .front-wheel {
-    transform-origin: 82% 72%;
-}
 
