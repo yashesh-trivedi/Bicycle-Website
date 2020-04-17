@@ -167,16 +167,37 @@ footer .controls #next-icon {
 
 
 @keyframes rotate-anticlockwise {
-    from {transform: rotate(0deg);}
+    /* from {transform: rotate(0deg);} */
     to {transform: rotate(-360deg);}
 }
 
 @keyframes rotate-clockwise {
-    from {transform: rotate(0deg);}
+    /* from {transform: rotate(0deg);} */
     to {transform: rotate(360deg);}
 }
 
 .move-forward  { animation: 4s rotate-clockwise ease-in-out 1; }
 .move-backward { animation: 4s rotate-anticlockwise ease-in-out 1; }
 
+.move-container-left {
+    animation: 4s move-left ease-in-out 1;
+    animation-delay: 100ms;
+    position: relative;
+}
+
+.move-container-right {
+    animation: 4s move-right ease 1;
+    animation-delay: 100ms;
+    position: relative;
+}
+
+@keyframes move-left {
+    from {left: 0;}
+    to {left: -850px;}
+}
+
+@keyframes move-right {
+    from {left: 0;}
+    to {left: 800px;}
+}
 
